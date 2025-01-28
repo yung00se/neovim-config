@@ -17,5 +17,7 @@ return {
 		})
 
 		vim.keymap.set("n", "<C-f>", vim.lsp.buf.format, {})
+    vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
+    vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 	end,
 }
